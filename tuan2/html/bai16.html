@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+          <div><h2>Travel revervation form</h2>
+          <form action="">
+                    <h3>* denotes mandotory</h3>
+                    <label for="full name">Full  name*:</label><br>
+                    <input type="text" id="full name" name="full name" placeholder="Firstname-Lastname"><br>
+                    <label for="email">Email adress*:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Email-Address"><br>
+                    <label for="select">Select Tour Package*:</label><br>
+                    <select style="width: 90px;" name="select" id="select">
+                              <option value="Goa">Goa</option>
+                    </select><br>
+                    <label for="arrival-date">Arrival date*:</label><br>
+                    <input type="date" id="arrival-date" name="arrival-date" placeholder="m/d/y"><br>
+                    <label for="telephone-number">Number of persons*:</label><br>
+                    <input type="tel" id="telephone-number" name="telephone-number" placeholder="UNKNOWN_TYPE"><br>
+                    <div>
+                              <label for="avail-want">What would you want to avail?*</label><br>
+                              <label for="boarding">Boarding</label>
+                              <input type="button"  name="avail-boarding" id="avail-boarding"><br>
+                              <label for="fooding">Fooding</label>
+                              <input type="button" name="avail-fooding" id="avail-fooding"><br>
+                              <label for="sightseeing">Sight seeing</label>
+                              <input type="button"  name="avail-sightseeing" id="avail-sightseeing"><br>
+                    </div>
+                    <label for="discount">Discout Coupon Code:</label><br>
+                    <input type="text" name="discount" id="discount" placeholder="UNKNOWN_TYPE"><br>
+                    <label for="Terms-conditons">Terms and conditions*</label><br>
+                    <input type="radio" name="answer" id="agree">
+                    <label for="agree">I Agree</label>
+                    <input type="radio" name="answer" id="disagree">
+                    <label for="disagree">I Disagree</label><br>
+                    <input type="submit" value="Complete reservation" id="complete" >
+          </form>
+          </div>
+</body>
+</html>
