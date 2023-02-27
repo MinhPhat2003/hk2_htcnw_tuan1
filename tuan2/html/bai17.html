@@ -5,18 +5,23 @@
           <meta http-equiv="X-UA-Compatible" content="IE=edge">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Document</title>
+          <style>
+                .list-item { margin-top: 10px;
+
+                }
+          </style>
 </head>
 <body>
-          <div style="background-color:#ffd078">
+          <div class="box" style="background-color:#ffd078">
                     <h2 style="text-align: center;">Survey Form</h2>
                     <p>If you are interested in pruchasing one or more of our products , before ordering please complete some or all of the following survey for our marketing department . Answering any question is optional , and all information will be kept strictly confidential. Thank you very much for you time!</p>
                     <form action="">
                               <ol>
-                                        <li>
+                                        <li class="list-item"  >
                                                   <label for="name">What is your name?</label>
                                                   <br><input type="text" name="name" id="name">
                                         </li>
-                                        <li>
+                                        <li class="list-item" >
                                                   <label for="date-birth">What is your date of birth?</label>
                                                   <br>
                                                   <label for="month">Month: </label>
@@ -72,7 +77,7 @@
                                                   <input size="3px" type="text" placeholder="19" id="year">
                                                   
                                         </li>
-                                        <li>
+                                        <li class="list-item" >
                                                   <label for="mail-address">What is your mailing address (if you would like to have a hard copy of our catalog sent to you)?</label><br>
                                                   <textarea name="box" id="box" cols="50" rows="9" style="line-height: 7px;" >
                                                             Number/P.O. Box/Route:
@@ -81,18 +86,18 @@
                                                             State/Zip:
                                                   </textarea>
                                         </li>
-                                        <li>
+                                        <li class="list-item" >
                                                   <label for="email">What is your email address?</label><br>
                                                   <input type="email" name="mail" id="mail">
                                         </li>
-                                        <li>
+                                        <li class="list-item" >
                                                   <label for="question-yesno">Have you viewed our online product catalog?</label><br>
                                                   <input type="radio" name="question-yesno" id="yes">
                                                   <label >Yes</label>
                                                   <input type="radio" name="question-yesno" id="no">
                                                   <label >No</label>
                                         </li>
-                                        <li>
+                                        <li class="list-item" >
                                                  <label >If so,what product(s), besides the one you are ordering , might you be interested in purchasing in the future? (Check all that apply)</label><br>                  
                                                  
                                                  <input type="checkbox" name="question-checkbox" id="question-checkbox1">
@@ -111,7 +116,7 @@
                                                  <br>
    
                                         </li>
-                                        <li>
+                                        <li class="list-item" >
                                                   <label >Do you have any questions , comments or suggestions before proeeding to the Order Form?</label><br>
                                                   <textarea name="have-question" id="have-question" cols="50" rows="6">Your Input:</textarea>
                                         </li>
