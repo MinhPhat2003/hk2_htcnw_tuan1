@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <style>
+                    *{
+                              padding: 0;
+                              margin: 0;
+                              box-sizing: border-box;
+                    }
+           li a{
+                    text-decoration: none;
+           }  
+           .wrapper{          
+                    min-height: 300px;
+                    width: 1089px;
+           }
+           header{
+                    position: relative;
+                    height: 150px;
+                    width: 100%;
+           }       
+           .top-menu li{
+                    display: inline-block;
+                    position: absolute;
+                    list-style: none;
+                    border: 3px solid red;
+                    border-radius: 10px;
+                    line-height: 45px;
+                    text-indent: 20px;
+                   
+                    
+          }
+          
+
+           .top-menu .sub-menu{
+                    display: none;
+
+           }
+           .top-menu li:first-child{
+                    top: 20px;
+                    left: 100px
+
+           }
+           .top-menu li:nth-child(2){
+                    top: 20px;
+                    left: 200px
+           }
+           .top-menu li:nth-child(3){
+                    top: 20px;
+                    left: 300px
+           }
+           .top-menu li:nth-child(4){
+                    top: 20px;
+                    left: 400px
+           }
+           .top-menu li:last-child{
+                    top: 20px;
+                    left: 500px;
+           }
+           .top-menu li:hover .sub-menu{
+                    display: flex;
+                    
+                    flex-wrap: wrap;
+           }
+           .top-menu .sub-menu li
+           {
+                    
+                    display: flex;
+                    justify-content: center;
+           }
+           .list {
+                    position: absolute;
+           }
+           .sub-menu{
+                    position: relative;
+           }
+          </style>
+</head>
+<body>
+          <div class="wrapper">
+                    <header>
+                              <ul class="top-menu">
+                                        <li><a href="">Item X</a></li>
+                                        <li class="list"><a href="">Item X</a>
+                                                  <ul class="sub-menu">
+                                                            <li><a href="">Item X</a></li>
+                                                            <li><a href="">Item X</a></li>
+                                                            <li><a href="">Item X</a></li>
+                                                  </ul>
+                                        </li>
+                                        <li><a href="">Item X</a></li>
+                                        <li><a href="">Item X</a></li>
+                                        <li><a href="">Item X</a></li>
+                              </ul>
+                    </header>
+          </div>
+</body>
+</html>

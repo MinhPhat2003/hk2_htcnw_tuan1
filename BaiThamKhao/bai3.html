@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Document</title>
+          <style>
+                    html,
+                    body,
+                    div,
+                    span,
+                    applet,
+                    object,
+                    iframe,
+                    h1,
+                    h2,
+                    h3,
+                    h4,
+                    h5,
+                    h6,
+                    p,
+                    blockquote,
+                    pre,
+                    a,
+                    abbr,
+                    acronym,
+                    address,
+                    big,
+                    cite,
+                    code,
+                    del,
+                    dfn,
+                    em,
+                    img,
+                    ins,
+                    kbd,
+                    q,
+                    s,
+                    samp,
+                    small,
+                    strike,
+                    strong,
+                    sub,
+                    sup,
+                    tt,
+                    var,
+                    b,
+                    u,
+                    i,
+                    center,
+                    dl,
+                    dt,
+                    dd,
+                    ol,
+                    ul,
+                    li,
+                    fieldset,
+                    form,
+                    label,
+                    legend,
+                    table,
+                    caption,
+                    tbody,
+                    tfoot,
+                    thead,
+                    tr,
+                    th,
+                    td,
+                    article,
+                    aside,
+                    canvas,
+                    details,
+                    embed,
+                    figure,
+                    figcaption,
+                    footer,
+                    header,
+                    hgroup,
+                    menu,
+                    nav,
+                    output,
+                    ruby,
+                    section,
+                    summary,
+                    time,
+                    mark,
+                    audio,
+                    video {
+                              margin: 0;
+                              padding: 0;
+                              border: 0;
+                              font-size: 100%;
+                              font: inherit;
+                              vertical-align: baseline;
+                    }
+
+                    /* HTML5 display-role reset for older browsers */
+                    article,
+                    aside,
+                    details,
+                    figcaption,
+                    figure,
+                    footer,
+                    header,
+                    hgroup,
+                    menu,
+                    nav,
+                    section {
+                              display: block;
+                    }
+
+                    body {
+                              line-height: 1;
+                    }
+
+                    ol,
+                    ul {
+                              list-style: none;
+                    }
+
+                    blockquote,
+                    q {
+                              quotes: none;
+                    }
+
+                    blockquote:before,
+                    blockquote:after,
+                    q:before,
+                    q:after {
+                              content: "";
+                              content: none;
+                    }
+
+                    table {
+                              border-collapse: collapse;
+                              border-spacing: 0;
+                    }
+
+                    .wrapper {
+
+                              height: 1000px;
+                              width: 980px;
+                              position: fixed;
+
+                    }
+
+                    .head {
+                              background-color: #294e79;
+                              height: 100px;
+                              width: auto;
+                    }
+
+                    .logo {
+                              display: flex;
+                              align-items: center;
+                              color: white;
+                              position: absolute;
+                              top: 15px;
+                              left: 25px;
+                    }
+
+                    .logo .Flower {
+                              font-size: 30px;
+                    }
+
+                    .logo .sub-flower {
+                              font-size: 13px;
+                    }
+
+                    .input {
+                              position: absolute;
+                              top: 10px;
+                              right: 40px;
+                    }
+
+                    .top-menu {
+                              display: flex;
+                              flex-wrap: nowrap;
+                              position: absolute;
+                              right: 20px;
+                              text-indent: 15px;
+                              top: 69px;
+
+
+
+                    }
+
+                    .menu-item {
+                              display: flex;
+                              border-top: 1px solid aqua;
+                              border-left: 1px solid aqua;
+                              border-right: 1px solid aqua;
+                              border-radius: 2px;
+                              margin-right: 30px;
+                              width: 70px;
+                              height: 30px;
+                              background-color: #3d73b1;
+                              align-items: center;
+
+                    }
+
+                    .top-menu li>a {
+                              color: white;
+                              text-decoration: none;
+                    }
+
+                    .top-menu li:hover {
+                              background-color: aqua;
+                              transition: 0.5s;
+                    }
+
+                    .top-menu li>a:hover {
+                              color: red;
+                              transition: 0.5s;
+                    }
+
+                    .menu-item1 {
+                              position: absolute;
+                              right: 550px;
+                    }
+
+                    .menu-item2 {
+                              position: absolute;
+                              right: 420px;
+                              width: 100px;
+                    }
+
+                    .menu-item3 {
+                              position: absolute;
+                              right: 289px;
+                              width: 100px;
+                    }
+
+                    .menu-item4 {
+                              position: absolute;
+                              right: 129px;
+                              width: 130px;
+                    }
+
+                    .menu-item5 {
+                              position: absolute;
+                              right: 29px;
+                    }
+
+                    .content {
+                              background-color: white;
+                              width: 950px;
+                              height: 500px;
+                              display: flex;
+                              margin-left: 10px;
+                    }
+
+                    .sub-content {
+                              display: flex;
+                    }
+
+                    .input-info .hightlight {
+                              color: red;
+                              text-shadow: 0px 1px green;
+                              font-style: italic;
+                              text-align: justify;
+                              margin-bottom: 10px;
+                              margin-top: 10px;
+                    }
+
+                    .label-email {
+                              margin-left: 132px;
+
+                    }
+
+                    .label-subject {
+                              margin-left: 104px;
+                    }
+
+                    .sub-content {
+                              display: flex;
+                    }
+
+                    .flower-info {
+                              width: 300px;
+                              height: 500px;
+                              margin-left: 40px;
+                              margin-top: 10px;
+
+                    }
+
+                    .input-info {
+                              width: 355px;
+                    }
+
+                    .p1-content {
+                              margin-top: 40px;
+                              font-size: 20px;
+                    }
+
+                    #text {
+                              border-radius: 2px;
+                              background-color: #1c3451;
+                              border: 1px solid #245ca1;
+
+                    }
+
+                    #button {
+                              border-radius: 2px;
+                              background-color: #1c3451;
+                              color: white;
+                              border: 1px solid #245ca1;
+
+                    }
+
+                    .discount {
+                              height: 350px;
+                              width: 275px;
+                              background-color: #f9f9f9;
+
+                    }
+                    .sub-discount{
+                              margin-left: 15px;
+                    }
+                    .p-discount{
+                              line-break: loose;
+                              text-align: justify;
+                              
+                    }
+                    .read-more{
+                              position: absolute;
+                              right: 10px;
+                              text-decoration: none;
+                              
+                    }
+                    .pink-flower{
+                              padding: 3px;
+                              border: 1px solid gray;
+                              border-radius: 2px;
+                    }
+                    .discount-head{
+                              font-size: 20px;
+
+                    }
+                    .foot{
+                              width: 990px;
+                              height: 50px;
+                              background-color: #1c3451;
+                              line-height: 50px;
+                              
+                    }
+                    .p-foot{
+                              color: #245ca1;
+                              
+                    }
+                    .white{
+                              color: white;
+                    }
+
+
+          </style>
+</head>
+
+<body>
+          <div class="wrapper">
+                    <header class="head">
+                              <div class="logo">
+                                        <img id="flower-logo" src="/img/logobonghoa.png" alt="" />
+                                        <div class="logo-content">
+                                                  <h1 class="Flower">FlowerBox 360</h1>
+                                                  <p class="sub-flower">...to get your daily dose of luxury roses!</p>
+                                        </div>
+                              </div>
+
+                              <div class="input">
+                                        <form class="head-form" action="">
+                                                  <input type="text" name="text" id="text"
+                                                            placeholder="Search the sites" />
+                                                  <button id="button" type="submit">GO</button>
+                                        </form>
+                              </div>
+                              <nav class="navigation">
+                                        <ul class="top-menu">
+                                                  <li class="menu-item menu-item1"><a href="">Home</a></li>
+                                                  <li class="menu-item menu-item2"><a href="">Promotion</a></li>
+                                                  <li class="menu-item menu-item3"><a href="">Gift Baskets</a></li>
+                                                  <li class="menu-item menu-item4"><a href="">Flower Services</a></li>
+                                                  <li class="menu-item menu-item5"><a href="">About</a></li>
+                                        </ul>
+                              </nav>
+                    </header>
+                    <div class="content">
+                              <div class="info">
+                                        <p class="p1-content">Why Not Contact Us Today!</p>
+                                        <span>--------------------------------------------------------------------------------------------------------------------</span>
+                                        <div class="sub-content">
+                                                  <div class="input-info">
+                                                            <h2 class="hightlight">For FlowerBox 360 shoppers, that
+                                                                      means not only can you send your friends and loved
+                                                                      ones the highest quality flowers found on online
+                                                                      ,but that you can do so at a great value</h2>
+                                                            <label class="label-name" for="name">Name:</label>
+                                                            <label class="label-email"
+                                                                      for="email">Email:</label><br><br>
+                                                            <input type="text" name="name" id="name">
+                                                            <input type="email" name="email" id="email">
+                                                            <br><br>
+                                                            <label class="label-telephone"
+                                                                      for="telephone">Telephone:</label>
+                                                            <label class="label-subject"
+                                                                      for="subject">Subject:</label><br><br>
+                                                            <input type="tel" name="telephone" id="telephone">
+                                                            <input type="text" name="subject" id="subject">
+                                                            <br><br>
+                                                            <label class="label-message"
+                                                                      for="message">Message:</label><br>
+                                                            <textarea name=message" id="message" cols="45"
+                                                                      rows="5"></textarea><br><br>
+                                                            <input type="submit" value="Submit">
+                                                            <input type="reset" value="Reset">
+                                                  </div>
+                                                  <div class="flower-info">
+                                                            <h2 class="address">FlowerBox 360 Info</h2>
+                                                            <span>-----------------------------------------</span>
+                                                            <br><br>
+                                                            <p class="line-1">Operating hours:</p>
+                                                            <p class="line-1">Monday-Friday: 9.00am-5.00pm.</p>
+                                                            <p class="line-1">Saturday: 9.00am-1.00pm.</p>
+                                                            <p class="line-1">Sunday: Closed(No Deliveries)</p>
+                                                            <p class="line-1">ORDER ONLINE 24/7</p>
+                                                            <br><br><br>
+                                                            <p class="line-2">Software Engineering Dept.</p>
+                                                            <p class="line-2">Information Technology Falcuty</p>
+                                                            <p class="line-2">First Floor,H Building</p>
+                                                            <br><br>
+                                                            <p class="line-3">12 Nguyen Van Bao St., Ward 4</p>
+                                                            <p class="line-3">Go Vap District</p>
+                                                            <p class="line-3">Ho Chi Minh City</p>
+                                                            <p class="line-3">Tel: 0283 8940 390</p>
+                                                            <p class="line-3">Fax: 0283.9940 954</p>
+                                                  </div>
+                                                  <div class="discount">
+                                                            <div class="sub-discount">
+                                                                      <h2 class="discount-head">
+                                                                                Discount & Special
+                                                                      </h2>
+                                                                      <span>-------------------------------------------</span>
+                                                                      <img class="pink-flower"
+                                                                                src="/img/hinh-anh-hoa-hong-leo-dep_021528729.jpg"
+                                                                                alt="" width="250px" height="100px" >
+                                                                      <br><br>
+                                                                      <p class="p-discount">FlowerBox 360 offers many great discounts throughout the year, from coupons and coupon codes, to promo codes and other savings. We also offer military flower discounts to our wonderful troops!</p>
+                                                                      <br>
+                                                                      <a href="" class="read-more">Read More >></a>
+                                                            </div>
+                                                  </div>
+                                        </div>
+                              </div>
+
+                    </div>
+                    <footer class="foot">
+                              <p class="p-foot"> <span class="white">Copyright © 2017 - All Rights Reserved</span> - Software Engineering Department - Industrial University of Ho Chi Minh City</p>
+                    </footer>
+          </div>
+</body>
+
+</html>
