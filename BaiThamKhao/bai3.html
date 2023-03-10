@@ -214,6 +214,10 @@
                     .top-menu li>a:hover {
                               color: red;
                               transition: 0.5s;
+
+                    }
+                    .top-menu li:hover .sub-menu{
+                              display: block;
                     }
 
                     .menu-item1 {
@@ -235,13 +239,13 @@
 
                     .menu-item4 {
                               position: absolute;
-                              right: 129px;
-                              width: 130px;
+                              right: 90px;
+                              width: 165px;
                     }
 
                     .menu-item5 {
                               position: absolute;
-                              right: 29px;
+                              right: 1px;
                     }
 
                     .content {
@@ -353,7 +357,20 @@
                     .white{
                               color: white;
                     }
-
+                    .sub-menu{
+                             position: absolute;
+                             margin-top: 64px;
+                             border: 1px solid aqua;
+                             border-radius: 2px;
+                             display: none;
+                             
+                    }
+                    .sub-item{
+                             background-color: #3d73b1;
+                             border-bottom: 1px solid aqua  ;
+                             
+                    }
+                   
 
           </style>
 </head>
@@ -381,7 +398,12 @@
                                                   <li class="menu-item menu-item1"><a href="">Home</a></li>
                                                   <li class="menu-item menu-item2"><a href="">Promotion</a></li>
                                                   <li class="menu-item menu-item3"><a href="">Gift Baskets</a></li>
-                                                  <li class="menu-item menu-item4"><a href="">Flower Services</a></li>
+                                                  <li class="menu-item menu-item4"><a href="">Flower Services</a>
+                                                            <ul class="sub-menu">
+                                                                      <li class="sub-item sub-item1 "><a href="">Flower for Wedding</a></li>
+                                                                      <li class="sub-item sub-item2 "><a href="">Flower for Conference</a></li>
+                                                            </ul> 
+                                                  </li>
                                                   <li class="menu-item menu-item5"><a href="">About</a></li>
                                         </ul>
                               </nav>
