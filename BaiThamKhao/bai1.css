@@ -1,0 +1,329 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+          margin: 0;
+          padding: 0;
+          border: 0;
+          font-size: 100%;
+          font: inherit;
+          vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+          display: block;
+}
+
+body {
+          line-height: 1;
+}
+
+ol,
+ul {
+          list-style: none;
+}
+
+blockquote,
+q {
+          quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+          content: "";
+          content: none;
+}
+
+table {
+          border-collapse: collapse;
+          border-spacing: 0;
+}
+.wrapper{
+          width: 720px;
+          height: 450px;
+          border: 1px solid red;
+          background: linear-gradient(to bottom,#6ecbec,#5da4ef);
+          margin-left: 10px;
+          position: absolute;
+}
+.heading{
+          width: 720px;
+          height: 40px;
+          border-bottom: 4px dotted white ;
+         
+          
+          
+}
+.top-menu{
+        display: flex;
+        flex-wrap: nowrap;
+        position: absolute;
+        
+        text-indent: 15px;
+        
+          
+}
+
+.top-menu li>a{
+          text-decoration: none;
+          
+          color: white;
+          font-size: 15px;
+          font-weight: bold;
+}
+.menu-item{
+        display: flex;
+}
+ .menu-item1{         
+          position: absolute;
+          top: 10px;
+          left: 20px;
+}
+.menu-item2{
+           position: absolute;
+          top: 10px;
+          left: 90px;
+}
+.menu-item3{
+          position: absolute;
+          top: 10px;
+          left: 180px;
+}
+.menu-item4{
+          position: absolute;
+          top: 10px;
+          left: 260px;
+}
+.menu-item5{
+           position: absolute;
+          top: 10px;
+          left: 330px;
+}
+.logo-name{
+          position: absolute;
+          right: 10px;
+          font-weight: bold;
+          font-size: 25px;
+          line-height: 40px;
+          color:white;
+          text-shadow: -1px 1px 10px blue;
+         
+          
+}
+.content{
+          height: 310px;
+          margin-top: 30px;
+          display: flex;
+          
+          border-bottom: 4px dotted white ;
+}
+.sky-image{
+          margin-left: 30px;
+}
+.sub-image{
+          margin-top: 20px;
+          margin-left: 40px;
+          font-weight: bold;
+          font-size: 25px;
+          color: whitesmoke;
+          text-shadow: 0px 1px 0px white;
+}
+.sub-h2{
+          margin-left: 45px;
+          font-weight: bold;
+          color: rgba(245, 245, 245, 0.432);
+}         
+.row-2{
+          font-size: 12px;
+          color: white;
+          margin-left: 25px;
+          text-align: justify;
+}
+.info-form{
+          margin-left: 25px;
+         
+          
+}
+
+.info{
+          font-size: 20px;
+          font-weight: bold;
+          
+}
+.sec-title{
+          margin-left: 108px;
+}
+#txtname{
+          margin-left: 76px;
+}
+#email{
+          margin-left: 51px;
+}
+#city-name{
+          margin-left: 110px;
+}
+#country-name{
+          margin-left:92px ;
+}
+.flex-message{
+         display: flex;
+}
+.message{
+          display: flex;
+          align-items: center;
+          max-inline-size: 135px;
+          text-align: left;
+}
+#message-area{
+         
+}
+.title, .sec-title{
+          margin-bottom: 5px;
+}
+.name, #txtname{
+          margin-bottom: 5px;          
+}
+.mail-address, #email{
+          margin-bottom: 5px;  
+}
+.city, #city-name{
+          margin-bottom: 5px;  
+}
+.country, #country-name{
+          margin-bottom: 5px;  
+}
+.button{
+          margin-top: 5px;
+          margin-left: 135px;
+}
+.submit, .reset{
+          border: 1px dashed blue;
+          border-radius: 15%;
+}
+.foot{
+          height:50px ;
+          font-size: 15px;
+          font-weight: bold;
+          color: white;
+          text-align: center;
+          
+}
+.p1{
+         line-height: 40px;
+}
+.p2{
+        line-height: 0px;
+}
+
+.sub-menu{
+        position: absolute;
+        top: 14px;
+        width: 150px;
+        background-color:aqua;
+        border: 1px solid rgba(43, 158, 162, 0.427);
+        display: none;
+}
+.sub-item{
+       border:  1px solid rgba(43, 158, 162, 0.427);
+}
+.top-menu li a:hover {
+        color: red;
+        background-color: aqua;
+        border: 1px solid rgba(43, 158, 162, 0.427);
+        transition: 0.5s;
+        
+}
+.top-menu li:hover .sub-menu{
+        display: block;
+
+}
