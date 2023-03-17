@@ -204,7 +204,6 @@ table {
           height: 310px;
           margin-top: 30px;
           display: flex;
-          
           border-bottom: 4px dotted white ;
 }
 .sky-image{
@@ -312,16 +311,23 @@ table {
         background-color:aqua;
         border: 1px solid rgba(43, 158, 162, 0.427);
         display: none;
+        
 }
 .sub-item{
        border:  1px solid rgba(43, 158, 162, 0.427);
+       height:40px ;
+       display: flex;
+       align-items: center;
 }
 .top-menu li a:hover {
         color: red;
-        background-color: aqua;
-        border: 1px solid rgba(43, 158, 162, 0.427);
+        
+        
         transition: 0.5s;
         
+}
+.top-menu li:hover {
+        background-color: black;
 }
 .top-menu li:hover .sub-menu{
         display: block;
